@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TestLab2.controller.MainController">
+   <children>
+      <TextField id="1" fx:id="tfSize" layoutX="221.0" layoutY="37.0" onInputMethodTextChanged="#textChange" onKeyPressed="#textChange" onKeyReleased="#textChange" prefHeight="29.0" prefWidth="52.0" text="" />
+      <Button id="2" fx:id="btnConfirm" disable="true" layoutX="273.0" layoutY="39.0" mnemonicParsing="false" onMouseClicked="#confMousClick" text="Подтвердить" wrapText="true" />
+      <Label layoutX="213.0" layoutY="22.0" text="Введите количество вершин(max 6)" />
+      <GridPane fx:id="gp" layoutX="173.0" layoutY="112.0" onKeyPressed="#keyChange" onKeyReleased="#keyChange" prefHeight="287.0" prefWidth="287.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="tf00" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" />
+            <TextField fx:id="tf10" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="1" />
+            <TextField fx:id="tf20" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="2" />
+            <TextField fx:id="tf30" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="3" />
+            <TextField fx:id="tf40" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="4" />
+            <TextField fx:id="tf50" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="5" />
+            <TextField fx:id="tf01" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.rowIndex="1" />
+            <TextField fx:id="tf11" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tf21" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="tf31" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="tf41" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="tf51" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <TextField fx:id="tf02" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.rowIndex="2" />
+            <TextField fx:id="tf12" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tf22" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="tf32" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="tf42" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <TextField fx:id="tf52" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <TextField fx:id="tf03" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.rowIndex="3" />
+            <TextField fx:id="tf13" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="tf23" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="tf33" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="tf43" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <TextField fx:id="tf53" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <TextField fx:id="tf04" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.rowIndex="4" />
+            <TextField fx:id="tf14" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="tf24" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="tf34" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="tf44" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <TextField fx:id="tf54" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <TextField fx:id="tf05" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.rowIndex="5" />
+            <TextField fx:id="tf15" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="tf25" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="tf35" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="tf45" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <TextField fx:id="tf55" onKeyPressed="#keyChange" onKeyReleased="#keyChange" visible="false" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <Button fx:id="btnCancel" disable="true" layoutX="115.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#cancelClick" text="Отмена" />
+      <Label fx:id="lbinfo" layoutX="173.0" layoutY="66.0" text="Введите матрицу смежности(значения 0 и 1)" visible="false" />
+      <TextField fx:id="tfStart" disable="true" layoutX="204.0" layoutY="421.0" onKeyPressed="#keyChange" onKeyReleased="#keyChange" prefHeight="25.0" prefWidth="35.0" />
+      <TextField fx:id="tfEnd" disable="true" layoutX="299.0" layoutY="421.0" onKeyPressed="#keyChange" onKeyReleased="#keyChange" prefHeight="25.0" prefWidth="35.0" />
+      <Button fx:id="btnResult" disable="true" layoutX="460.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#clickResult" text="Расчитать" />
+      <Label layoutX="175.0" layoutY="446.0" text="Вершина начала" />
+      <Label layoutX="273.0" layoutY="446.0" text="Вершина конца" />
+      <Label fx:id="lbResult" layoutX="460.0" layoutY="455.0" text="Результат" />
+
+   </children>
+</Pane>
